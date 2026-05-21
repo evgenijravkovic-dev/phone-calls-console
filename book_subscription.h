@@ -3,15 +3,13 @@
 
 #include "constants.h"
 
-struct BookSubscription {
-    char readerLastName[50];
-    char readerFirstName[50];
-    char readerMiddleName[50];
-    char phoneNumber[20];
-    char callDate[11];
-    char callTime[9];
-    int duration;
-    char city[50];
+struct PhoneCall {
+    char number[20];
+    char date[11];
+    char time[9];
+    char duration[9];
+    char tariff[20];
+    double costPerMinute;
 };
 
 #endif
